@@ -1,10 +1,10 @@
 package itmo.lab4;
 
-import itmo.lab4.models.common.PartOfDay;
+import itmo.lab4.models.scene.Scene;
 
 public class App {
     public static void main(String[] args) {
-        PartOfDay time = PartOfDay.AFTERNOON;
-        System.out.println(time);
+        Scene scene = new Scene(); 
+        System.out.println(scene.getStory());
     }
 }

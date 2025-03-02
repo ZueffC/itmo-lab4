@@ -1,10 +1,10 @@
-package itmo.lab4.models.common;
+package itmo.lab4.models.time;
 
 public enum PartOfDay {
-   MORNING("утро"),
-   AFTERNOON("день"),
-   EVENING("вечер"),
-   NIGHT("ночь");
+   MORNING("Наступило утро. "),
+   AFTERNOON("Был день. "),
+   EVENING("Наступил вечер."),
+   NIGHT("На дворе была ночь. ");
    
    private final String description;
    

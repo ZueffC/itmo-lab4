@@ -1,11 +1,9 @@
 package itmo.lab4.models.humans;
 
-import itmo.lab4.models.moove.Destination;
-
 abstract class BaseHuman { 
-    private HumanMoods mood;
-    private Destination destination;
+    protected HumanMoods mood;
     
     public abstract String shout();
+    public abstract String notice();
     public abstract String walk();
 }
