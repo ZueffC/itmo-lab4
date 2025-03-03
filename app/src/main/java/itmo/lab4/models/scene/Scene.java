@@ -48,9 +48,6 @@ public class Scene {
        
         story.append(ship.healthStatus());
         
-        var mood = ship.getSailors().getMood().toString();
-        story.append("Мы были ").append(mood).append(". ");   
-
         return story.toString();
     }
 }

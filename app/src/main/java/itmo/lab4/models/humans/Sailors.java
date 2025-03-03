@@ -1,6 +1,7 @@
 package itmo.lab4.models.humans;
 
-public class Sailors extends BaseHuman {
+public class Sailors extends BaseHuman {    
+    @Override
     public String walk() {
         return "Nothing";
     }
@@ -13,13 +14,5 @@ public class Sailors extends BaseHuman {
     @Override
     public String notice() {
         return "";
-    }
-
-    public HumanMoods getMood() {
-        return this.mood;
-    }
-
-    public void setMood(HumanMoods newMood) {
-        this.mood = newMood;
     }
 }
