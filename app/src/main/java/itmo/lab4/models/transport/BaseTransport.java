@@ -22,9 +22,14 @@ public abstract class BaseTransport {
         return this.original_health;
     }
     
-   public byte getHealthCoefficient() {
-       return (byte) (this.health / this.original_health);
+    public float getHealthCoefficient() {
+        if (this.original_health != 0 || this.health != 0) 
+            return (float) this.health / this.original_health;
+        else
+            return (float) 0.5;
    }
+    
+    public abstract String hide();
     
     public abstract void takeDamage(byte damage) throws ShipDestroyedException;
 }

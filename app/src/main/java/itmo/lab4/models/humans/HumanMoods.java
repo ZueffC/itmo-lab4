@@ -5,8 +5,10 @@
 package itmo.lab4.models.humans;
 
 public enum HumanMoods {
-    Happy("счастлив"), 
-    Worry("испуган");
+    Happy("счастлива"), 
+    Worry("обеспокоена"),
+    Panic("в панике"),
+    Calm("спокойна");
     
     private final String description;
     
