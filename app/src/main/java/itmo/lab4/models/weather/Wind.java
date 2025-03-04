@@ -14,7 +14,6 @@ public class Wind implements Damageable {
     @Override
     public String toString() {
         int strengthGroup = this.strength / 10;
-        System.out.println(strengthGroup);
         return switch (strengthGroup) {
             case 4 -> "Корабль стонал под натиском ветра, гунись мачты. ";
             case 3 -> "Ветер накидывался на парусник, как сорвавшаяся с цепи собака. ";

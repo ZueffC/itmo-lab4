@@ -28,4 +28,22 @@ public class Sailors extends BaseHuman {
             "представляет собой %s. ", browsable.lookAround()
         );
     }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        
+        Sailors sailors = (Sailors) obj;
+        return mood != null ? mood.equals(sailors.mood) : sailors.mood == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return mood != null ? mood.hashCode() : 0;
+    }
 }

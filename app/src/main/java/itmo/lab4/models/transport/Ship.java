@@ -5,7 +5,7 @@ import itmo.lab4.exceptions.ShipDestroyedException;
 import itmo.lab4.models.humans.*;
 
 public class Ship extends BaseTransport  {
-    private Sailors sailors;
+    private final Sailors sailors;
     private ShipLocations location;
     
     public Ship(String name, byte health, ShipLocations location) {
