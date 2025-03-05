@@ -31,7 +31,9 @@ public class App {
                 }
                 case "random" -> System.out.println(scene.getRandomStory());
                 case "main" -> System.out.println(scene.getMainStory());
-                default -> System.out.println("Unknown command. Please enter 'random', 'main', or 'exit'.");
+                default -> {
+                  System.out.println("Unknown command. Please enter 'random', 'main', or 'exit'.");
+                }
             }
         }
         
